@@ -53,7 +53,7 @@ def main():
         next(reader)
 
         data = []
-        for row in reader:
+        for row in reader:           
             data.append({
                 "evidence": [float(cell) for cell in row[:2]],
                 "label": int(row[2])
@@ -75,17 +75,29 @@ def main():
 
     correct = 0
     incorrect = 0
+    
+    if input("0 for auto test: ") == "0":
+        for test in testing:
+            verdict = test["label"] == perceptron.hypothesis(test["evidence"])
+            
+            if verdict:
+                correct += 1
+            else:
+                incorrect += 1
 
-    for test in testing:
-        verdict = test["label"] == perceptron.hypothesis(test["evidence"])
-        
-        if verdict:
-            correct += 1
-        else:
-            incorrect += 1
+        print("Correct:", correct, "out of", correct + incorrect)
+        print("Incorrect:", incorrect, "out of", correct + incorrect)
+    else:
+        while True:
+            try:
+                num = input("num, num: ").split(", ")
 
-    print("Correct:", correct, "out of", correct + incorrect)
-    print("Incorrect:", incorrect, "out of", correct + incorrect)
+                data_point = [float(thing) for thing in num]
+            except Exception as e:
+                print(e)
+                continue
+
+            print(perceptron.hypothesis(data_point))
 
 if __name__ == "__main__":
     main()
