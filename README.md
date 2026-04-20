@@ -1,12 +1,11 @@
 # Simple Perceptron
 
-Simple implementation of perceptron learning
+Implementation of perceptron learning
 
 ## Description
 
-It was fun to be honest
-
-Simple perceptron neuron implementation
+What is perceptron?
+Perceptron is a very simplified neural network that makes decisions from certain weights that each (weights) corresponds to certain attributes of a data point (all data points must have the same amount of attributes). It is mainly used for binary classification problems.
 
 ## Getting Started
 
@@ -24,7 +23,7 @@ python perceptron.py
 python generate.py
 ```
 
-to generate a new `dataset.csv`
+to generate a new `dataset.csv` but check the code first to modify things.
 
 2. And run the program
 
@@ -37,4 +36,8 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Credits
 
 * CS50 AI for introducing me to perceptrons (https://cs50.harvard.edu/ai/notes/4/)
-* geeksforgeeks article (https://www.geeksforgeeks.org/deep-learning/what-is-perceptron-the-simplest-artificial-neural-network/)
+* geeksforgeeks article for help (https://www.geeksforgeeks.org/deep-learning/what-is-perceptron-the-simplest-artificial-neural-network/)
+
+---
+
+By quandela
