@@ -1,11 +1,11 @@
-# Simple Perceptron
+# Perceptron Learning
 
-Implementation of perceptron learning
+Implementation of a single-layer perceptron
 
 ## Description
 
-What is perceptron?
-Perceptron is a very simplified neural network that makes decisions from certain weights that each (weights) corresponds to certain attributes of a data point (all data points must have the same amount of attributes). It is mainly used for binary classification problems.
+- What is a single-layer perceptron?
+- A single-layer perceptron is the simplest artificial neural network, created by Frank Rosenblatt in 1958, designed for binary classification of linearly separable patterns. It consists of input nodes feeding directly into a single processing neuron, which calculates a weighted sum, adds bias, and applies an activation function. 
 
 ## Getting Started
 
